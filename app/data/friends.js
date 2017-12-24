@@ -38,7 +38,7 @@ var friends = [{
     scores: [4, 4, 1, 3, 4, 3, 3, 4, 5, 2]
   },{
     name: "Dean Winchester",
-    photo: "https://i.pinimg.com/736x/cb/b2/27/cbb2278bd7d09ca7fb8152e8e92b36f5--perfect-smile-beautiful-smile.jpgg",
+    photo: "https://orig00.deviantart.net/6352/f/2017/052/5/e/bad_tattoo___dean_winchester_x_reader___by_entirelybonkers-d92xcsl.jpg",
     scores: [2, 5, 4, 5, 3, 4, 5, 5, 5, 5]
   }];
   
