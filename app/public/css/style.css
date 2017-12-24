@@ -23,7 +23,7 @@ body {
     font-size: 28px;
 }
 
-#button {
+#button, #submit-btn {
     color: black;
     background-color: #d1fcf3;
 }
