@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
-        <head>
-                <title>Friend Finder</title>
-                  <!-- Include Font Awesome Icons -->
-                  <script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
-                
-                <!-- Bring in Bootstrap -->
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="aStrongly Disagreenymous">
-                
-                <!--Google Fonts -->
-                <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+            <title>Friend Finder</title>
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+           <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <!-- Latest compiled Bootstrap JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
             
-                <!-- Links to stylesheets -->
-                <link rel="stylesheet" href="css/reset.css">         
-                <link rel="stylesheet" href="css/style.css">
-        </head>
+            <!-- Include Font Awesome Icons -->
+            <script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
+            <!--Google Fonts -->
+            <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">     
+            <!-- Links to stylesheets -->
+            <link rel="stylesheet" href="css/reset.css">         
+            <link rel="stylesheet" href="css/style.css">
+    </head>
 
 <div class= "row">
     <div class = "col-sm-12" id= "surveyhead">
@@ -22,193 +25,194 @@
     </div>
 </div>
 
-        <div class="row">
-                <div class="col-sm-3">
-                    <div class="list-group"  id= "listNav">
-                        <a href="./home.html" class="list-group-item list-group-item-action">Home</a>
-                        <a href="/api/friends" class="list-group-item list-group-item-action">Friends List</a>
-                        <a href="https://github.com/maggiebarker/FriendFinder" class="list-group-item list-group-item-action">GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
-                        <a href="https://twitter.com/devOpsDarling26" class="list-group-item list-group-item-action">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="https://github.com/maggiebarker" class="list-group-item list-group-item-action">© 2017 Maggie Barker</a>
+<div class="row">
+        <div class="col-sm-3">
+            <div class="list-group"  id= "listNav">
+                <a href="/" class="list-group-item list-group-item-action">Home</a>
+                <a href="/api/friends" class="list-group-item list-group-item-action">Friends List</a>
+                <a href="https://github.com/maggiebarker/FriendFinder" class="list-group-item list-group-item-action">GitHub <i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/devOpsDarling26" class="list-group-item list-group-item-action">Twitter <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://github.com/maggiebarker" class="list-group-item list-group-item-action">© 2017 Maggie Barker</a>
                       </div>
-                </div>
-                <div class="col-sm-8" id="content">
-                        <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title" id = "title" >Find a New Friend!</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <form role="form">
-                                        <div class="form-group">
-                                            <label for="">Name (required)</label>
-                                            <input type="text" class="form-control" id="friend_name">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Photo Image URL</label>
-                                            <input type="text" class="form-control" id="friend_photo">
-                                        </div>
-            						<!-- Survey Questions -->
-                                        <h4 id= "title" >Rate your Response: </h4>
-                                        <div class="form-group">
-                                            <label for="">You are constantly thinking of new ideas and plans.</label>
-                                            <select id="a0" class="form-control">
-                                                <option>1 (Strongly Disagree)</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5 (Strongly Agree)</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Generally speaking, you prefer to work unsupervised.</label>
-                                            <select id="a1" class="form-control">
-                                                <option>1 (Strongly Disagree)</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5 (Strongly Agree)</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">You find it easy to stay cool under pressure.</label>
-                                            <select id="a2" class="form-control">
-                                                <option>1 (Strongly Disagree)</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5 (Strongly Agree)</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">You like to be in charge of any given situation.</label>
-                                            <select id="a3" class="form-control">
-                                                <option>1 (Strongly Disagree)</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5 (Strongly Agree)</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">You have a strong temper.</label>
-                                            <select id="a4" class="form-control">
-                                                <option>1 (Strongly Disagree)</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5 (Strongly Agree)</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">You have difficulties relating to other peoples feelings.</label>
-                                            <select id="a5" class="form-control">
-                                                <option>1 (Strongly Disagree)</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5 (Strongly Agree)</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Truth should be more important than people’s sensitivities.</label>
-                                            <select id="a6" class="form-control">
-                                                <option>1 (Strongly Disagree)</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5 (Strongly Agree)</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">You have a hard time admitting when you're wrong.</label>
-                                            <select id="a7" class="form-control">
-                                                <option>1 (Strongly Disagree)</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5 (Strongly Agree)</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">You have a very keen sense of right and wrong.</label>
-                                            <select id="a8" class="form-control">
-                                                <option>1 (Strongly Disagree)</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5 (Strongly Agree)</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="">Family is very important to you.</label>
-                                            <select id="a9" class="form-control">
-                                                <option>1 (Strongly Disagree)</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5 (Strongly Agree)</option>
-                                            </select>
-                                        </div>
-                                       	<!-- Survey Submit Button -->
-                                    </form>
-                                    <button class="btn btn-info" id = "button">Submit Responses <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-                                </div>
-                            </div>
-                </div>
-            </div>
+        </div>
+    <div class="col-sm-8" id="content">
+            <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><strong>About Me</strong></h3>
+                    </div>
+                    <div class="panel-body">
+                        <form method="POST" role="form">
 
-            <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-            
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-            
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    
+                            <div class="form-group">
+                                <label for="name">Name (Required)</label>
+                                <input type="text" class="form-control" id="username">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="role">Link to Photo Image (Required)</label>
+                                <input type="text" class="form-control" id="photo">
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><strong>Survey Questions</strong></h3>
+                    </div>
+                    <div class="panel-body">
+                        <form method="POST" role="form">
+
+                            <h4>Question 1</h4>
+                            <h5>You are constantly thinking of new ideas and plans.</h5>
+                            <select class="chosen-select" id="q1">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                          </select>
+                            <hr>
+                            <h4>Question 2</h4>
+                            <h5>Generally speaking, prefer to work unsupervised.</h5>
+                            <select class="chosen-select" id="q2">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                          </select>
+                            <hr>
+                            <h4>Question 3</h4>
+                            <h5>You find it easy to stay cool under pressure.</h5>
+                            <select class="chosen-select" id="q3">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                          </select>
+                            <hr>
+                            <h4>Question 4</h4>
+                            <h5>You like to be in charge in any given situation.</h5>
+                            <select class="chosen-select" id="q4">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                          </select>
+                            <hr>
+                            <h4>Question 5</h4>
+                            <h5>You have a strong temper.</h5>
+                            <select class="chosen-select" id="q5">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                          </select>
+                            <hr>
+                            <h4>Question 6</h4>
+                            <h5>You have difficulties relating to other people’s feelings.</h5>
+                            <select class="chosen-select" id="q6">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                          </select>
+                            <hr>
+                            <h4>Question 7</h4>
+                            <h5>Truth should be more important than people’s sensitivities.</h5>
+                            <select class="chosen-select" id="q7">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                          </select>
+                            <hr>
+                            <h4>Question 8</h4>
+                            <h5>You have a hard time admitting when you're wrong.</h5>
+                            <select class="chosen-select" id="q8">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                          </select>
+                            <hr>
+                            <h4>Question 9</h4>
+                            <h5>You have a keen sense of right and wrong.</h5>
+                            <select class="chosen-select" id="q9">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                          </select>
+                            <hr>
+                            <h4>Question 10</h4>
+                            <h5>Family is very important to you.</h5>
+                            <select class="chosen-select" id="q10">
+                            <option value="select">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                          </select>
+                        </form>
+                        <br>
+                        <button type="submit" class="btn btn-info btn-lg" id="submit-btn">Submit  <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                    </div>
+            </div>
+  
+            <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <div class="caption" align="center">Your new friend is ... </div>
+                    <img src="" id="imagepreview" height=80% width=80%>
+                    <div class="caption" id="caption" align="center"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
     <script type="text/javascript">
-        // In this code below we create the Front-end Javascript which "POSTS" our form data to our express server.
-        // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
-        // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
-        // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file 
-        function displayPopup(htmldata,urldata) {
-            $(".popupText").text(htmldata);
-            $('.popupImage').html(urldata);
-            $(".thePopup").show(800, function() {
-                timeoutID = window.setTimeout(hideDiv, 8000);
-                function hideDiv() {
-                    $(".thePopup").hide(800);
-                };
-            });
-        };
-        $(".theButton").on("click", function() {
-            // Here we grab the form elements
-            var newFriend = {
-                friendName: $('#friend_name').val().trim(),
-                friend_photo: $('#friend_photo').val().trim(),
-                friendNumbers: []
-            };
-            for (i = 0; i < 10; i++) {
-                var newVal = $('#a' + i).val();
-                newFriend.friendNumbers.push(parseInt(newVal));
-            }
-            console.log(newFriend);
-            // This line is the magic. It's very similar to the standard ajax function we used. 
-            // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-            // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-            // depending on if a tables is available or not. 
-            // Here we get the location of the root page. 
-            // We use this instead of explicitly saying the URL is localhost:3001 because the url will change when we deploy.
-            var currentURL = window.location.origin;
-            $.post(currentURL + "/api/theList", newFriend,
-                function(data) {
-                    console.log(data.friendName);
-                    var sendTheMatch = "Your Best match is " + data.friendName;
-                    var sendTheImage = '<img src = "'+ data.friend_photo + '">';
-                    displayPopup(sendTheMatch,sendTheImage);
-                    // Clear the form when submitting
-                    $('#friend_name').val("");
-                    $('#friend_photo').val("");
-                });
+        $("#submit-btn").on("click", function() {
             event.preventDefault();
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val() ]
+            };
+            alert("Preparing your match results...");
+            $.post("/api/new", newFriend)
+                .done(function(data) {
+                    console.log(data);
+                    $('#caption').text(data.name);
+                    $('#imagepreview').attr('src', data.photo);
+                    $('#imagemodal').modal('show');
+                });
+            $("#name").val("");
+            $("#photo").val("");
+            [$("#q1").val(""), $("#q2").val(""), $("#q3").val(""), $("#q4").val(""), $("#q5").val(""), $("#q6").val(""), $("#q7").val(""), $("#q8").val(""), $("#q9").val(""), $("#q10").val("") ]
         });
-        </script>
+    </script>
 </body>
 </html>
